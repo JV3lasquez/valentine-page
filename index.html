@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -69,14 +69,14 @@
 <body>
 
   <div id="message">
-    <!-- 🐶 Added: cute dog image at the top of the page -->
-    <img src="https://jv3lasquez.github.io/valentine-page/cute-dog.jpeg" alt="Cute dog"
-         style="width: 300px; max-width: 80vw; display: block; margin: 0 auto 20px auto; border-radius: 12px;">
+
+    <!-- 🐶 NEW: cute dog image at the top -->
+    <img id="topDog" src="cute-dog.jpeg" style="width:250px; margin-bottom:20px;">
 
     <h1>Andrea, will you be my Valentine?</h1>
     <h1 id="yay" style="display: none;">YAYYY!!! 🎉💖</h1>
 
-    <!-- ⭐ Added image (hidden at first) -->
+    <!-- ⭐ Existing hidden image -->
     <img id="yayImage" src="IMG_0767.jpeg" style="display:none; width:300px; margin-top:20px;">
   </div>
 
@@ -121,7 +121,7 @@
     noButton.style.display = "none";
     yayText.style.display = "block";
 
-    // ⭐ Show the image
+    // Show the image under "YAYYY"
     document.getElementById("yayImage").style.display = "block";
 
     // spawn hearts continuously
