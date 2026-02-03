@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -69,11 +69,10 @@
 <body>
 
   <div id="message">
-
     <h1>Andrea, will you be my Valentine?</h1>
     <h1 id="yay" style="display: none;">YAYYY!!! 🎉💖</h1>
 
-    <!-- ⭐ Existing hidden image -->
+    <!-- ⭐ Added image (hidden at first) -->
     <img id="yayImage" src="IMG_0767.jpeg" style="display:none; width:300px; margin-top:20px;">
   </div>
 
@@ -118,7 +117,7 @@
     noButton.style.display = "none";
     yayText.style.display = "block";
 
-    // Show the image under "YAYYY"
+    // ⭐ Show the image
     document.getElementById("yayImage").style.display = "block";
 
     // spawn hearts continuously
@@ -128,6 +127,7 @@
 
 </body>
 </html>
+
 
 
 
