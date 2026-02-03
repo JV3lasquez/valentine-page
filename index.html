@@ -69,9 +69,12 @@
 <body>
 
   <div id="message">
-  <h1>Andrea, will you be my Valentine?</h1>
-  <h1 id="yay" style="display: none;">YAYYY!!! 🎉💖</h1>
-</div>
+    <h1>Andrea, will you be my Valentine?</h1>
+    <h1 id="yay" style="display: none;">YAYYY!!! 🎉💖</h1>
+
+    <!-- ⭐ Added image (hidden at first) -->
+    <img id="yayImage" src="your-image.jpg" style="display:none; width:300px; margin-top:20px;">
+  </div>
 
   <button id="yes">Yes</button>
   <button id="no">No</button>
@@ -114,10 +117,13 @@
     noButton.style.display = "none";
     yayText.style.display = "block";
 
+    // ⭐ Show the image
+    document.getElementById("yayImage").style.display = "block";
+
     // spawn hearts continuously
     setInterval(createHeart, 300);
   });
 </script>
 
-
-</body></html>
+</body>
+</html>
